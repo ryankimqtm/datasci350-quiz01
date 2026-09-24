@@ -1,3 +1,39 @@
+
+  189  git clone https://github.com/ryankimqtm/datasci350-quiz01.git
+  190  cd datasci350-quiz01
+  191  touch ./commands.txt
+  192  tree datasci350-quiz01
+  193  ls
+  194  git switch -c station-upgrade
+  195  mkdir results
+  196  ls
+  197  touch ./results/summary.md && echo "Analysis of the first field season." > ./results/summary.md
+  198  cat summary.md
+  199  cat ./results/summary.md
+  204  git add results/
+  205  git commit -m "Add results directory"
+  206  git status
+  207  mv data/sensor-readings.csv data/station-data.csv
+  208  mkdir scripts/archive && cp scripts/*.py scripts/archive/
+  209  rm docs/notes.md
+  210  git add . 
+  211  git commit -m "Update station files"
+  212  echo "temp/" >> .gitignore && echo "log?.txt" >> .gitignore
+  213  ls
+  214  ls -a 
+  215  cat .gitignore
+  216  git add .gitignore && git commit -m "Add gitignore"
+  217  touch ./log{1..4}.txt
+  218  ls
+  219  git status
+On branch station-upgrade
+nothing to commit, working tree clean
+
+answer to 13: .gitignore forces to ignore the files
+  220  wc -l data/station-data.csv >> results/summary.md
+  221  cat results/summary.md
+  222  nano scripts/03-plot.py
+  223  git diff
 diff --git a/results/summary.md b/results/summary.md
 index 295821a..953fc03 100644
 --- a/results/summary.md
@@ -13,3 +49,17 @@ index 70ea841..c5af7da 100644
 +# Reviewed for the field season report
  # Plot the daily temperature readings
  # Prints a simple text chart, one bar per reading.
+
+answer to 15: shows content that was added to the file
+  224  nano commands.txt
+  225  cd ~/datasci350-quiz01
+  226  git diff
+  227  nano commands.txt
+  228  git add .
+  229  git commit -m "Update analyss"
+  230  git commit --amend -m "Update analysis"
+  231  git switch main
+  232  git merge station-upgrade
+  233  git log --oneline
+  234  nano commands.txt
+  235  history | tail -n 60 > commands.txt
