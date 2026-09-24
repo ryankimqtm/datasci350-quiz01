@@ -1,0 +1,15 @@
+diff --git a/results/summary.md b/results/summary.md
+index 295821a..953fc03 100644
+--- a/results/summary.md
++++ b/results/summary.md
+@@ -1 +1,2 @@
+ Analysis of the first field season.
++41 data/station-data.csv
+diff --git a/scripts/03-plot.py b/scripts/03-plot.py
+index 70ea841..c5af7da 100644
+--- a/scripts/03-plot.py
++++ b/scripts/03-plot.py
+@@ -1,3 +1,4 @@
++# Reviewed for the field season report
+ # Plot the daily temperature readings
+ # Prints a simple text chart, one bar per reading.
